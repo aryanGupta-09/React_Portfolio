@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 import { skillbubbles } from "../data";
+import sound from "../assets/bubble.mp3";
 
 const Skills = () => {
     const [isMobile, setIsMobile] = useState(false);
@@ -22,6 +23,10 @@ const Skills = () => {
         };
     }, []);
 
+    function play(){
+        new Audio(sound).play();
+    }
+
     const desktopDrag = { top: -20, left: -20, right: 20, bottom: 20 };
     const mobileDrag = { top: -1, left: -1, right: 1, bottom: 1 };
 
@@ -33,7 +38,7 @@ const Skills = () => {
                 {skillbubbles.map((skill, index) => {
                     return (
                         <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: index/25 }}>
-                            <motion.button key={index} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} drag dragConstraints={isMobile ? mobileDrag : desktopDrag} className="rounded-circle bg-dark-subtle" style={{ width: "100px", height: "100px" }}>
+                            <motion.button key={index} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} drag dragConstraints={isMobile ? mobileDrag : desktopDrag} onClick={play} className="rounded-circle bg-dark-subtle" style={{ width: "100px", height: "100px" }}>
                                 <img src={skill} alt="skill" className="rounded-circle" style={{ maxWidth: "100%", maxHeight: "100%" }} />
                             </motion.button>
                         </motion.div>
