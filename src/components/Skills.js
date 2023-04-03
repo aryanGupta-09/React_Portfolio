@@ -38,7 +38,7 @@ const Skills = () => {
                     );
                 })}
             </motion.div>
-            <br/><br/><br/>
+            <br/><br/><br/><br/><br/>
         </section>
     );
 }
