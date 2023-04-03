@@ -15,6 +15,7 @@ class Projects extends Component {
                         <ProjectCard project={project} />
                     ))}
                 </motion.div>
+                <br/><br/>
             </section>
         );
     }

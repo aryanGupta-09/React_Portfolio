@@ -2,7 +2,26 @@ import portfolio_img from './assets/portfolio_img.png';
 import tank_img from './assets/tank_img.png';
 import retail_img from './assets/retail_img.png';
 
-const navlinks = ["Home", "About", "Projects", "Contact"];
+import c from './assets/skillbubbles/c.png';
+import cpp from './assets/skillbubbles/cpp.png';
+import java from './assets/skillbubbles/java.png';
+import python from './assets/skillbubbles/python.png';
+import html from './assets/skillbubbles/html.png';
+import css from './assets/skillbubbles/css.png';
+import js from './assets/skillbubbles/js.png';
+import mongodb from './assets/skillbubbles/mongodb.png';
+import express from './assets/skillbubbles/express.png';
+import react from './assets/skillbubbles/react.png';
+import node from './assets/skillbubbles/node.png';
+import mysql from './assets/skillbubbles/mysql.png';
+import threejs from './assets/skillbubbles/threejs.png';
+import figma from './assets/skillbubbles/figma.png';
+import blender from './assets/skillbubbles/blender.png';
+import adobe from './assets/skillbubbles/adobe.png';
+import git from './assets/skillbubbles/git.png';
+import github from "./assets/github_icon.svg";
+
+const navlinks = ["Home", "About", "Projects", "Skills", "Contact"];
 
 const reactpath = "m11,5.56c6.08,0,11,1.88,11,4.2s-4.92,4.2-11,4.2S0,12.08,0,9.76s4.92-4.2,11-4.2Zm3.64,2.1c3.04,5.26,3.87,10.47,1.86,11.63s-6.1-2.17-9.14-7.43S3.49,1.39,5.5.23s6.1,2.17,9.14,7.43Zm0,4.2c-3.04,5.26-7.13,8.59-9.14,7.43s-1.17-6.37,1.86-11.63S14.49-.93,16.5.23s1.17,6.37-1.86,11.63Z";
 const nodepath = "m7.9.12c.27-.16.62-.16.9,0l7.45,4.3c.28.16.45.46.45.78v8.6c0,.32-.17.62-.45.78l-7.45,4.3c-.28.16-.62.16-.9,0L.46,14.57c-.28-.16-.46-.46-.46-.78V5.2c0-.32.16-.62.45-.78L7.9.12Z";
@@ -32,4 +51,6 @@ const nexusmart = {
 }
 const projects = [portfolio, tankstars, nexusmart];
 
-export {navlinks, svgpaths, svgcolors, projects};
+const skillbubbles = [c, cpp, java, python, html, css, js, mongodb, express, react, node, mysql, threejs, figma, blender, adobe, git, github];
+
+export {navlinks, svgpaths, svgcolors, projects, skillbubbles};
