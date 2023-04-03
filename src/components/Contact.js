@@ -33,7 +33,7 @@ const Contact = () => {
     }
 
     return (
-        <div style={{ backgroundColor: "#080823" }}>
+        <div id="Contact" style={{ backgroundColor: "#080823" }}>
             <div className="d-flex justify-content-center column-gap-5" style={{ paddingLeft: "20px", paddingRight: "20px" }}>
                 <div className="rounded" style={{ backgroundColor: "#1F1F1F", width: "300px", padding: "20px" }}>
                     <h1 className="text-white">Get in touch</h1>

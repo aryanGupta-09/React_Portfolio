@@ -7,7 +7,7 @@ import {projects} from "../data"
 class Projects extends Component {
     render() {
         return (
-            <section style={{ backgroundColor: "#080823" }}>
+            <section id="Projects" style={{ backgroundColor: "#080823" }}>
                 <h1 className="text-white text-center">Projects</h1>
                 <br/>
                 <motion.div className="d-flex flex-wrap justify-content-around row-gap-5">

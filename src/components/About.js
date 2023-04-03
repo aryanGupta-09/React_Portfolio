@@ -46,7 +46,7 @@ function About() {
     }, []);
 
     return (
-        <section style={{ backgroundColor: "#080823", paddingLeft: isMobile ? "7%" : "22%", paddingRight: isMobile ? "7%" : "22%", paddingTop: "70px", paddingBottom: "70px" }}>
+        <section id="About" style={{ backgroundColor: "#080823", paddingLeft: isMobile ? "7%" : "22%", paddingRight: isMobile ? "7%" : "22%", paddingTop: "70px"}}>
             <div className="d-flex justify-content-center gap-5 rounded" style={{backgroundColor: "#1F1F1F"}}>
                 <div style={{ marginTop: "30px", paddingLeft: "50px", width: isMobile ? "" : "50%" }}>
                     <h1 className="text-white">About Me</h1>
@@ -65,6 +65,7 @@ function About() {
                     </svg>
                 </div>
             </div>
+            <br/><br/>
         </section>
     );
 }

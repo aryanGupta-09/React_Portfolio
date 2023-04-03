@@ -14,7 +14,7 @@ const styles = {
 
 class Hero extends Component {
     render() {
-        return (<section className="vh-100 position-relative" style={styles.section}>
+        return (<section id="Home" className="vh-100 position-relative" style={styles.section}>
             <div className="position-absolute" style={styles.intro}>
                 <h1 className="text-white" style={{ display: "inline" }}>Hey there, I'm </h1>
                 <span className="h1" style={styles.name}>

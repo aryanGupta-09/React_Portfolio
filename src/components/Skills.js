@@ -26,7 +26,7 @@ const Skills = () => {
     const mobileDrag = { top: -1, left: -1, right: 1, bottom: 1 };
 
     return (
-        <section style={{ backgroundColor: "#080823" }}>
+        <section id="Skills" style={{ backgroundColor: "#080823" }}>
             <h1 className="text-white text-center">Skills</h1>
             <br/>
             <motion.div className="d-flex flex-wrap justify-content-around gap-5 mx-auto" style={{ maxWidth: isMobile ? "100%" : "55%" }}>
