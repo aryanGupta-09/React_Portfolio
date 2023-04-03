@@ -28,17 +28,19 @@ const Skills = () => {
     return (
         <section id="Skills" style={{ backgroundColor: "#080823" }}>
             <h1 className="text-white text-center">Skills</h1>
-            <br/>
-            <motion.div className="d-flex flex-wrap justify-content-around gap-5 mx-auto" style={{ maxWidth: isMobile ? "100%" : "55%" }}>
+            <br />
+            <div className="d-flex flex-wrap justify-content-around gap-5 mx-auto" style={{ maxWidth: isMobile ? "100%" : "55%" }}>
                 {skillbubbles.map((skill, index) => {
                     return (
-                        <motion.button key={index} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} drag dragConstraints={isMobile ? mobileDrag : desktopDrag} className="rounded-circle bg-dark-subtle" style={{ width: "100px", height: "100px" }}>
-                            <img src={skill} alt="skill" className="rounded-circle" style={{ maxWidth: "100%", maxHeight: "100%" }} />
-                        </motion.button>
+                        <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: index/25 }}>
+                            <motion.button key={index} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} drag dragConstraints={isMobile ? mobileDrag : desktopDrag} className="rounded-circle bg-dark-subtle" style={{ width: "100px", height: "100px" }}>
+                                <img src={skill} alt="skill" className="rounded-circle" style={{ maxWidth: "100%", maxHeight: "100%" }} />
+                            </motion.button>
+                        </motion.div>
                     );
                 })}
-            </motion.div>
-            <br/><br/><br/><br/><br/>
+            </div>
+            <br /><br /><br /><br /><br />
         </section>
     );
 }
