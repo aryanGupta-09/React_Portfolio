@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <NavBar />
       <Hero />
-      {/* <About /> */}
+      <About />
       <Projects />
       <Skills />
       <Contact />
