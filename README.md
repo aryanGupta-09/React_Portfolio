@@ -15,12 +15,18 @@ https://aryangupta09.netlify.app/
 ```bash
   git clone https://github.com/aryanGupta-09/React_Portfolio.git
 ```
-2. Install NPM packages
+
+2. Go to the project directory
+```bash
+  cd React_Portfolio
+```
+
+3. Install NPM packages
 ```bash
   npm install
 ```
 
-3. Run the project
+4. Start the server
 ```bash
   npm start
 ```
